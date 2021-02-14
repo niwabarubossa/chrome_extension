@@ -1,0 +1,15 @@
+{
+  "name": "Sample",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Sample Chrome Extension",
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*" ],
+    "js": ["jquery-3.5.1.js","contents.js"],
+    "css": ["contents.css"]
+  }],
+  "browser_action": {
+    "default_title": "defau;title",
+    "default_popup": "popup.html"
+  }
+}
